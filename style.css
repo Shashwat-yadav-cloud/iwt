@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  header .search-bar {
+    padding: 8px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  header .header-icons div {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  header .profile-icon {
+    font-size: 1.5em;
+  }
+  
+  /* Sidebar Styles (for larger screens) */
+  .sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 20px;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #444;
+  }
+  
+  /* Main Content Styles */
+  main {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  /* Mobile Styles */
+  .hamburger-menu {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .mobile-nav {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+  }
+  
+  .mobile-nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .mobile-nav ul li {
+    padding: 15px;
+  }
+  
+  .mobile-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .mobile-nav ul li a:hover {
+    background-color: #444;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+    
+    .hamburger-menu {
+      display: block;
+    }
+    
+    .mobile-nav {
+      display: block;
+    }
+  }
+  
+  /* Active Link Highlighting */
+  .sidebar ul li a.active,
+  .mobile-nav ul li a.active {
+    background-color: #00aaff;
+    color: white;
+  }
+  
